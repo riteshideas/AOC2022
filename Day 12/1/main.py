@@ -1,3 +1,5 @@
+# Please to the problem statement for more details of the question
+
 import numpy as np
 import math
 from collections import deque

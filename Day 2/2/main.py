@@ -1,3 +1,5 @@
+# Please to the problem statement for more details of the question
+
 score = 0
 
 def rps_outcome(player1, player2):
@@ -41,7 +43,7 @@ def convert(inp):
 
     return out
 
-def losing(inp):
+def losing(inp): # Checking if the person if losing
     out = None
     if inp == "rock":
         out = "paper"
@@ -52,7 +54,7 @@ def losing(inp):
 
     return out
 
-def winning(inp):
+def winning(inp): # Checking if the person if winning
     out = None
     if inp == "rock":
         out = "scissor"
@@ -81,7 +83,7 @@ for game in rps.split("\n"):
     out = rps_outcome(opp, player_out)
     init_score = score
 
-    if out == 0:
+    if out == 0: # if the person won, there would be 6 points awarded, 0 points if they lost and 3 points if they has a draw
         print("Draw")
         score += 3
     elif out == 2:

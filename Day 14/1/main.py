@@ -1,3 +1,5 @@
+# Please to the problem statement for more details of the question
+
 import math
 from os import system
 import time

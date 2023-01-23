@@ -1,6 +1,8 @@
+# Please to the problem statement for more details of the question
+
 score = 0
 
-def rps_outcome(player1, player2):
+def rps_outcome(player1, player2): # Making rock, paper and scissor outcomes
     out = None
 
     if player1 == player2:
@@ -17,7 +19,7 @@ def rps_outcome(player1, player2):
     # 0 == draw, 1 == player1 won, 2 == player2 won
     return out
 
-def points(attack):
+def points(attack): # Awarding points
     out = None
     if attack == "rock":
         out = 1
@@ -28,7 +30,7 @@ def points(attack):
 
     return out
 
-def convert(inp):
+def convert(inp): # Converting A, B, C to rock, paper and scissor
 
     out = ""
 
@@ -42,10 +44,10 @@ def convert(inp):
     return out
 
 
-with open("../input.txt", "r") as f:
+with open("../input.txt", "r") as f: # Reading file
     rps = f.read()
 
-for game in rps.split("\n"):
+for game in rps.split("\n"): # Playing the rock, paper and scissor tournament and calculating the score
     player = convert(game[2])
     opp = convert(game[0])
 

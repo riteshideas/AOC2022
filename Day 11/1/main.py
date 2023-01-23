@@ -1,3 +1,5 @@
+# Please to the problem statement for more details of the question
+
 with open("../input.txt", "r") as f:
     data = f.read().split("\n\n")
 

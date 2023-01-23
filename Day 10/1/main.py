@@ -1,3 +1,5 @@
+# Please to the problem statement for more details of the question
+
 with open("../input.txt", "r") as f:
     instructions = f.read().split("\n")
 
@@ -20,7 +22,6 @@ while True:
     if 0 >= executing_instruction[1]:
         if "addx" == executing_instruction[0]:
             xReg += int(executing_instruction[2].split()[1])
-            #print(int(executing_instruction[2].split()[1]), executing_instruction[2].split())
         executing_instruction = ["", 0, ""]
 
     if cycle in interrupts:
